@@ -33,3 +33,5 @@ def merge_sort(arr):
             k += 1
 
 nums = [12,77,5,1,18,22,152,80]
+merge_sort(nums)
+print(nums)
