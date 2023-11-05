@@ -13,9 +13,9 @@ def partition(arr, left, right):
 def quick_select(arr, left, right, k):
     pivot_index = partition(arr, left, right)
 
-    if pivot_index == k - 1:
+    if pivot_index == (k - 1):
         return arr[pivot_index]
-    elif pivot_index > k - 1:
+    elif pivot_index > (k - 1):
         return quick_select(arr, left, pivot_index - 1, k)
     else:
         return quick_select(arr, pivot_index + 1, right, k)
